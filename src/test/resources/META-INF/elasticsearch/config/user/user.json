@@ -1,0 +1,8 @@
+{
+    "user" : {
+        "properties" : {
+            "username" : {"type" : "string", "store" : "yes"},
+            "password" : {"type" : "string", "store" : "yes"}
+        }
+    }
+}
