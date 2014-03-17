@@ -7,8 +7,8 @@ import org.elasticsearch.action.suggest.SuggestResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
 
-import com.weasel.core.EsPage;
-import com.weasel.core.Page;
+import com.weasel.lang.EsPage;
+import com.weasel.lang.Page;
 import com.weasel.elasticsearch.core.HighlightFieldResultParser;
 import com.weasel.elasticsearch.core.SearchResultParser;
 import com.weasel.elasticsearch.core.query.SearchQuery;

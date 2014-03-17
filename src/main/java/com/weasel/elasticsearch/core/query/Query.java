@@ -18,7 +18,7 @@ package com.weasel.elasticsearch.core.query;
 
 import java.util.List;
 
-import com.weasel.core.Page;
+import com.weasel.lang.Page;
 
 /**
  * Query
