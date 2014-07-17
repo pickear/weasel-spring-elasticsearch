@@ -1,7 +1,7 @@
 package com.weasel.elasticsearch;
 
-import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
 import static com.weasel.elasticsearch.core.query.Query.DEFAULT_PAGE;
+import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -20,12 +20,7 @@ import org.elasticsearch.search.suggest.Suggest.Suggestion.Entry.Option;
 import org.elasticsearch.search.suggest.SuggestBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.weasel.lang.EsPage;
-import com.weasel.lang.Page;
-import com.weasel.lang.annotation.Id;
-import com.weasel.lang.helper.DemonPredict;
-import com.weasel.lang.helper.GodHands;
-import com.weasel.lang.helper.JsonHelper;
+import com.weasel.converter.JsonHelper;
 import com.weasel.elasticsearch.core.ElasticsearchRepository;
 import com.weasel.elasticsearch.core.HighlightFieldResultParser;
 import com.weasel.elasticsearch.core.SearchResultParser;
@@ -38,6 +33,11 @@ import com.weasel.elasticsearch.core.query.SearchQuery;
 import com.weasel.elasticsearch.core.query.SuggestQuery;
 import com.weasel.elasticsearch.core.query.UpdateQuery;
 import com.weasel.elasticsearch.core.query.UpdateQueryBuilder;
+import com.weasel.lang.EsPage;
+import com.weasel.lang.Page;
+import com.weasel.lang.annotation.Id;
+import com.weasel.lang.helper.DemonPredict;
+import com.weasel.lang.helper.GodHands;
 
 /**
  * @author Rizwan Idrees

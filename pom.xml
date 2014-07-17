@@ -3,27 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.weasel.spring.elasticsearch</groupId>
 	<artifactId>weasel-spring-elasticsearch</artifactId>
-	<version>1.0.0-RELEASE</version>
 	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java-version>1.6</java-version>
-		<org.springframework-version>3.2.1.RELEASE</org.springframework-version>
-		<org.aspectj-version>1.6.9</org.aspectj-version>
-		<org.slf4j-version>1.5.10</org.slf4j-version>
-		<org.shiro-version>1.2.2</org.shiro-version>
-	</properties>
+	<parent>
+		<groupId>com.weasel.parent</groupId>
+		<artifactId>weasel-parent</artifactId>
+		<version>1.0.0-RELEASE</version>
+		<relativePath>../weasel-parent/pom.xml</relativePath>
+	</parent>
 	
 	<dependencies>
 		<dependency>
-			<groupId>com.weasel.lang</groupId>
-			<artifactId>weasel-lang</artifactId>
+			<groupId>com.weasel.converter</groupId>
+			<artifactId>weasel-converter</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${org.springframework-version}</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -35,42 +31,30 @@
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
-			<version>0.90.7</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
-			<version>2.2.2</version>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
-			<version>3.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>fr.pilato.spring</groupId>
 			<artifactId>spring-elasticsearch</artifactId>
-			<version>0.3.0</version>
 		</dependency>
 
 	</dependencies>

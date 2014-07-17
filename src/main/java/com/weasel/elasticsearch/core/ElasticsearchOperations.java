@@ -65,11 +65,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.Assert;
 
-import com.weasel.lang.EsPage;
-import com.weasel.lang.Page;
-import com.weasel.lang.annotation.Document;
-import com.weasel.lang.helper.GodHands;
-import com.weasel.lang.helper.JsonHelper;
+import com.weasel.converter.JsonHelper;
 import com.weasel.elasticsearch.core.query.DeleteQuery;
 import com.weasel.elasticsearch.core.query.GetQuery;
 import com.weasel.elasticsearch.core.query.IndexQuery;
@@ -79,6 +75,10 @@ import com.weasel.elasticsearch.core.query.SearchQuery;
 import com.weasel.elasticsearch.core.query.SuggestQuery;
 import com.weasel.elasticsearch.core.query.UpdateQuery;
 import com.weasel.elasticsearch.exception.ElasticsearchException;
+import com.weasel.lang.EsPage;
+import com.weasel.lang.Page;
+import com.weasel.lang.annotation.Document;
+import com.weasel.lang.helper.GodHands;
 
 /**
  * ElasticsearchTemplate

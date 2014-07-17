@@ -27,16 +27,16 @@ import org.elasticsearch.search.sort.SortOrder;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.weasel.lang.EsPage;
-import com.weasel.lang.Page;
-import com.weasel.lang.helper.DemonPredict;
-import com.weasel.lang.helper.JsonHelper;
+import com.weasel.converter.JsonHelper;
 import com.weasel.elasticsearch.core.HighlightFieldResultParser;
 import com.weasel.elasticsearch.core.SearchResultParser;
 import com.weasel.elasticsearch.core.query.NativeSearchQueryBuilder;
 import com.weasel.elasticsearch.core.query.SearchQuery;
 import com.weasel.elasticsearch.test.domain.Address;
 import com.weasel.elasticsearch.test.domain.User;
+import com.weasel.lang.EsPage;
+import com.weasel.lang.Page;
+import com.weasel.lang.helper.DemonPredict;
 
 /**
  * @author Dylan
