@@ -22,7 +22,7 @@ import static org.apache.commons.collections.CollectionUtils.addAll;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.weasel.lang.Page;
+import com.weasel.core.Page;
 
 /**
  * MoreLikeThisQuery

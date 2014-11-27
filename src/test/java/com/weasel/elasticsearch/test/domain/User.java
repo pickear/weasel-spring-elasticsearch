@@ -1,7 +1,7 @@
 package com.weasel.elasticsearch.test.domain;
 
-import com.weasel.lang.BaseObject;
-import com.weasel.lang.annotation.Document;
+import com.weasel.core.BaseObject;
+import com.weasel.core.annotation.Document;
 
 /**
  * @author Dylan

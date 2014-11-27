@@ -5,17 +5,31 @@
 	<artifactId>weasel-spring-elasticsearch</artifactId>
 	
 	<parent>
-		<groupId>com.weasel.parent</groupId>
-		<artifactId>weasel-parent</artifactId>
+		<groupId>com.weasel.root</groupId>
+		<artifactId>weasel-root</artifactId>
 		<version>1.0.0-RELEASE</version>
-		<relativePath>../weasel-parent/pom.xml</relativePath>
+		<relativePath>../weasel-root/pom.xml</relativePath>
 	</parent>
 	
 	<dependencies>
 		<dependency>
-			<groupId>com.weasel.converter</groupId>
-			<artifactId>weasel-converter</artifactId>
+			<groupId>com.weasel.helper</groupId>
+			<artifactId>weasel-helper</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-beanutils</groupId>
+					<artifactId>commons-beanutils</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.thoughtworks.xstream</groupId>
+					<artifactId>xstream</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

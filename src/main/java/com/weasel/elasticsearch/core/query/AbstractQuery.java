@@ -22,7 +22,7 @@ import java.util.List;
 
 import org.springframework.util.Assert;
 
-import com.weasel.lang.Page;
+import com.weasel.core.Page;
 
 /**
  * AbstractQuery

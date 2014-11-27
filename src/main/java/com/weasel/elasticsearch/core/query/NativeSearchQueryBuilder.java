@@ -25,7 +25,7 @@ import org.elasticsearch.search.facet.FacetBuilder;
 import org.elasticsearch.search.highlight.HighlightBuilder;
 import org.elasticsearch.search.sort.SortBuilder;
 
-import com.weasel.lang.Page;
+import com.weasel.core.Page;
 
 /**
  * NativeSearchQuery

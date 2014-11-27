@@ -1,6 +1,6 @@
 package com.weasel.elasticsearch.test.domain;
 
-import com.weasel.lang.BaseObject;
+import com.weasel.core.BaseObject;
 
 /**
  * @author Dylan

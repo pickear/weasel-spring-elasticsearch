@@ -6,8 +6,8 @@ import org.elasticsearch.action.suggest.SuggestResponse;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.Client;
 
-import com.weasel.lang.EsPage;
-import com.weasel.lang.Page;
+import com.weasel.core.EsPage;
+import com.weasel.core.Page;
 import com.weasel.elasticsearch.core.query.DeleteQuery;
 import com.weasel.elasticsearch.core.query.GetQuery;
 import com.weasel.elasticsearch.core.query.IndexQuery;

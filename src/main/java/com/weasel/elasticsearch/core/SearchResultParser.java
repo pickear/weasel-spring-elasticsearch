@@ -2,7 +2,7 @@ package com.weasel.elasticsearch.core;
 
 import org.elasticsearch.action.search.SearchResponse;
 
-import com.weasel.lang.EsPage;
+import com.weasel.core.EsPage;
 
 /**
  * 搜索结果的解析器(转换结果)
